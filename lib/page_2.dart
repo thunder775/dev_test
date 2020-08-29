@@ -117,7 +117,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                                 child: Text(
                                   "PENDING TASK",
                                   style: TextStyle(
-                                      fontSize: 16, color: Colors.black),
+                                      fontSize: 15, color: Colors.black),
                                 ),
                               ),
                               Padding(
@@ -125,7 +125,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                                 child: Text(
                                   "COMPLETED TASK",
                                   style: TextStyle(
-                                      fontSize: 16, color: Colors.black),
+                                      fontSize: 15, color: Colors.black),
                                 ),
                               ),
                             ],
