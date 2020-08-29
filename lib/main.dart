@@ -268,14 +268,14 @@ class MyHomePage extends StatelessWidget {
                   text: TextSpan(
                       text: views.toString(),
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 14.5,
                         color: Colors.black.withOpacity(.7),
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: "  " + "Views",
+                          text: " " + "Views",
                           style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 13,
                               letterSpacing: .5,
                               color: Colors.grey),
                         )
@@ -285,14 +285,14 @@ class MyHomePage extends StatelessWidget {
                   text: TextSpan(
                       text: clicks.toString(),
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 14.5,
                         color: Colors.black.withOpacity(.7),
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: "  " + "Click-throughs",
+                          text: " " + "Click-throughs",
                           style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 13,
                               letterSpacing: .5,
                               color: Colors.grey),
                         )
