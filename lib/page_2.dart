@@ -27,7 +27,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         elevation: 0,
         actions: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 8.0, right: 16),
+            padding: const EdgeInsets.only(top: 12.0, right: 16),
             child: GestureDetector(
               onTap: () => Navigator.push(
                   context, MaterialPageRoute(builder: (context) => Page2())),
@@ -56,28 +56,28 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             tabs: <Widget>[
               Container(
                 child: Image(
-                  height: 60,
+                  height: 45,
                   fit: BoxFit.cover,
                   image: AssetImage('assets/heart_beat.png'),
                 ),
               ),
               Container(
                 child: Image(
-                  height: 60,
+                  height: 45,
                   fit: BoxFit.cover,
                   image: AssetImage('assets/tie.png'),
                 ),
               ),
               Container(
                 child: Image(
-                  height: 60,
+                  height: 45,
                   fit: BoxFit.cover,
                   image: AssetImage('assets/hand_shake.png'),
                 ),
               ),
               Container(
                 child: Image(
-                  height: 60,
+                  height: 45,
                   fit: BoxFit.cover,
                   image: AssetImage('assets/search.png'),
                 ),
@@ -105,7 +105,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 ListView(
                   children: <Widget>[
                     Container(
-                      height: 250,
+                      height: 230,
                       child: Column(
                         children: <Widget>[
                           TabBar(
@@ -113,19 +113,19 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                             controller: tabController2,
                             tabs: <Widget>[
                               Padding(
-                                padding: const EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.only(top:12.0,bottom: 8,left: 8,right: 8),
                                 child: Text(
                                   "PENDING TASK",
                                   style: TextStyle(
-                                      fontSize: 15, color: Colors.black),
+                                      fontSize: 13, color: Colors.black),
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.only(top:12.0,bottom: 8,left: 8,right: 8),
                                 child: Text(
                                   "COMPLETED TASK",
                                   style: TextStyle(
-                                      fontSize: 15, color: Colors.black),
+                                      fontSize: 13, color: Colors.black),
                                 ),
                               ),
                             ],
@@ -216,7 +216,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w400,
-                        fontSize: 16),
+                        fontSize: 14.5),
                     textAlign: TextAlign.center,
                   ),
                   Text(
@@ -224,7 +224,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     style: TextStyle(
                         color: Colors.grey,
                         fontWeight: FontWeight.w300,
-                        fontSize: 15),
+                        fontSize: 13.5),
                     textAlign: TextAlign.center,
                   ),
                   Text(
@@ -238,7 +238,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 ],
               ),
               SizedBox(
-                width: 20,
+                width: 15,
               ),
               Image(
                 image: AssetImage('assets/person2.png'),
@@ -256,7 +256,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 fit: BoxFit.cover,
               ),
               SizedBox(
-                width: 20,
+                width: 15,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -269,7 +269,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w400,
-                        fontSize: 16),
+                        fontSize: 14.5),
                     textAlign: TextAlign.center,
                   ),
                   Text(
@@ -277,7 +277,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     style: TextStyle(
                         color: Colors.grey,
                         fontWeight: FontWeight.w300,
-                        fontSize: 15),
+                        fontSize: 13.5),
                     textAlign: TextAlign.center,
                   ),
                   Text(
@@ -326,7 +326,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               children: <Widget>[
                 Image(
                   image: AssetImage('assets/person2.png'),
-                  height: 95,
+                  height: 80,
                   fit: BoxFit.cover,
                 ),
                 Expanded(
@@ -340,7 +340,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 Image(
                   image: AssetImage('assets/match.png'),
                   fit: BoxFit.cover,
-                  height: 60,
+                  height: 50,
                 ),
                 Expanded(
                     child: Padding(
@@ -352,15 +352,15 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 )),
                 Image(
                   image: AssetImage('assets/person2.png'),
-                  height: 95,
+                  height: 80,
                   fit: BoxFit.cover,
                 ),
               ],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 18.0, right: 18),
-            child: Row(
+            padding: const EdgeInsets.only(left: 8.0, right: 8),
+            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Container(
                   width: 130,
@@ -374,7 +374,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w400,
-                            fontSize: 18),
+                            fontSize: 15),
                         textAlign: TextAlign.center,
                       ),
                       Text(
@@ -382,7 +382,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w300,
-                            fontSize: 16.5),
+                            fontSize: 14),
                         textAlign: TextAlign.center,
                       ),
                       Text(
@@ -390,7 +390,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w300,
-                            fontSize: 13),
+                            fontSize: 12),
                         textAlign: TextAlign.center,
                       ),
                     ],
@@ -449,7 +449,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w400,
-                            fontSize: 18),
+                            fontSize: 15),
                         textAlign: TextAlign.center,
                       ),
                       Text(
@@ -457,7 +457,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w300,
-                            fontSize: 16.5),
+                            fontSize: 14),
                         textAlign: TextAlign.center,
                       ),
                       Text(
@@ -465,7 +465,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                         style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w300,
-                            fontSize: 13),
+                            fontSize: 12),
                         textAlign: TextAlign.center,
                       ),
                     ],

@@ -74,13 +74,13 @@ class MyHomePage extends StatelessWidget {
                             children: <Widget>[
                               Image(
                                 image: AssetImage('assets/person.png'),
-                                width: 135,
-                                height: 135,
+                                width: 120,
+                                height: 120,
                                 fit: BoxFit.cover,
                               ),
                               Positioned(
-                                right: 20,
-                                bottom: 25,
+                                right: 15,
+                                bottom: 15,
                                 child: Image(
                                   width: 30,
                                   image: AssetImage('assets/star.png'),
@@ -172,7 +172,7 @@ class MyHomePage extends StatelessWidget {
                       const EdgeInsets.symmetric(vertical: 20, horizontal: 22),
                   child: Text(
                     'Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ',
-                    style: TextStyle(fontSize: 16, height: 1.5, wordSpacing: 1),
+                    style: TextStyle(fontSize: 14, height: 1.5, wordSpacing: 1,fontWeight: FontWeight.w300),
                   ),
                 ),
                 separator(context),
@@ -321,7 +321,7 @@ class MyHomePage extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Container(
-            width: 140,
+            width: 130,
             height: 25,
             child: Row(
               children: <Widget>[
@@ -332,7 +332,7 @@ class MyHomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Text(
                         leadText,
-                        style: TextStyle(color: Colors.black.withOpacity(.7)),
+                        style: TextStyle(color: Colors.black.withOpacity(.7),fontSize: 13),
                       ),
                     ),
                   ),
@@ -344,19 +344,19 @@ class MyHomePage extends StatelessWidget {
             width: 100,
             // color: Colors.red,
             child: Padding(
-              padding: const EdgeInsets.only(left: 16.0),
+              padding: const EdgeInsets.only(left: 8.0),
               child: RichText(
                 text: TextSpan(
                     text: inequities.toString(),
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 14.5,
                       color: Colors.black.withOpacity(.7),
                     ),
                     children: <TextSpan>[
                       TextSpan(
                         text: "  " + "inquiries",
                         style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 13,
                             letterSpacing: .5,
                             color: Colors.grey),
                       )
@@ -385,12 +385,12 @@ class MyHomePage extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                width: 100,
+                width: 80,
                 color: Colors.grey.withOpacity(.4),
                 height: 5,
               ),
               Container(
-                width: double.parse(percent.toString()),
+                width: .8*percent,
                 color: Colors.grey,
                 height: 5,
               ),
@@ -401,14 +401,14 @@ class MyHomePage extends StatelessWidget {
           text: TextSpan(
               text: percent.toString() + "%",
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 14,
                 color: Colors.black.withOpacity(.7),
               ),
               children: <TextSpan>[
                 TextSpan(
                   text: "  " + "Active",
                   style: TextStyle(
-                      fontSize: 15, letterSpacing: .5, color: Colors.grey),
+                      fontSize: 12.5, letterSpacing: .5, color: Colors.grey),
                 )
               ]),
         )
@@ -417,7 +417,7 @@ class MyHomePage extends StatelessWidget {
   }
 
   TextStyle headingTextStyle() {
-    return TextStyle(fontSize: 19.5, color: Colors.black, height: 1);
+    return TextStyle(fontSize: 17, color: Colors.black, height: 1);
   }
 
   Container separator(BuildContext context) {
@@ -436,19 +436,19 @@ class MyHomePage extends StatelessWidget {
           text: TextSpan(
               text: mainText,
               style: TextStyle(
-                fontSize: 21,
+                fontSize: 18,
                 color: Colors.black,
               ),
               children: <TextSpan>[
                 TextSpan(
                   text: subText,
-                  style: TextStyle(fontSize: 14),
+                  style: TextStyle(fontSize: 13),
                 )
               ]),
         ),
         Text(
           footerText,
-          style: TextStyle(color: Colors.grey, fontSize: 13),
+          style: TextStyle(color: Colors.grey, fontSize: 12),
         )
       ],
     );
