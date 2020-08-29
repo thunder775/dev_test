@@ -321,7 +321,7 @@ class MyHomePage extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Container(
-            width: 130,
+            width: 140,
             height: 25,
             child: Row(
               children: <Widget>[
@@ -341,7 +341,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Container(
-            width: 110,
+            width: 100,
             // color: Colors.red,
             child: Padding(
               padding: const EdgeInsets.only(left: 16.0),
